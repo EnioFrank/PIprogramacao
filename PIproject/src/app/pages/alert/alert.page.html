@@ -1,9 +1,13 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>alert</ion-title>
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Pagina de alerta</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+<ion-button expand="block" color="secondary" (click)="alert()">Alerta</ion-button>
+<ion-button expand="block" color="primary" (click)="alertaMultiplosBotoes()">Alerta Multiplos botoes</ion-button>
 </ion-content>
