@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActionSheetController } from '@ionic/angular';
 import { actionSheetController } from '@ionic/core';
 
 @Component({
@@ -9,10 +10,11 @@ import { actionSheetController } from '@ionic/core';
 export class ActionsheetPage implements OnInit {
   actionSheetCtrl: any;
 
-  constructor() { }
+  constructor(private actionsheetCrtl: ActionSheetController) { }
 
   ngOnInit() {
   }
+
   async actionSheet() {
   const actionSheet = await this.actionSheetCtrl.create({
     header: 'Albuns',
